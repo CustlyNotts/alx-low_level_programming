@@ -21,10 +21,11 @@ int main(void)
 				if (i != 57)
 				{
 				putchar(j);
-				}
 				putchar(k);
+				}
 			}
 		}
 	}
+	putchar(10);
 	return (0);
 }
