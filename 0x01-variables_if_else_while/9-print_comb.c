@@ -18,14 +18,13 @@ int main(void)
 			for (k = 32; k < 33; k++)
 			{
 				putchar(i);
-				if (i == 57)
+				if (i != 57)
 				{
-				putchar(k);
-				continue;
+				putchar(j);
 				}
 				else
 				{
-				putchar(j);
+				putchar(k);
 				}
 			}
 		}
