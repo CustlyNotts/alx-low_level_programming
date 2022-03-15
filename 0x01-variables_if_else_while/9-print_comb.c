@@ -7,16 +7,11 @@
  */
 int main(void)
 {
-	int i = 48;
-	int j = 44;
-	int k = 32;
+	char num = '0';
 
-	for (i = 48; i < 58; i++)
-		putchar(i);
-		for (j = 44; j < 45; j++)
-			putchar(j);
-			for (k = 32; k < 33; k++)
-				putchar(k);
-	putchar(10);
+	while (num <= '9')
+		putchar(num);
+		putchar(44);
+		putchar(32);
 	return (0);
 }
