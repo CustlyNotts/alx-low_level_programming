@@ -22,10 +22,7 @@ int main(void)
 				{
 				putchar(j);
 				}
-				else
-				{
 				putchar(k);
-				}
 			}
 		}
 	}
