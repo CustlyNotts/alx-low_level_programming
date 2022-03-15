@@ -19,11 +19,13 @@ int main(void)
 			{
 				putchar(i);
 				if (i == 57)
-					continue;
+				{
+				putchar(k);
+				continue;
+				}
 				else
 				{
 				putchar(j);
-				putchar(k);
 				}
 			}
 		}
