@@ -12,10 +12,10 @@ int main(void)
 	int k = 32;
 
 	for (i = 48; i < 58; i++)
+		putchar(i);
 		for (j = 44; j < 45; j++)
+			putchar(j);
 			for (k = 32; k < 33; k++)
-				putchar(i);
-				putchar(j);
 				putchar(k);
 	putchar(10);
 	return (0);
