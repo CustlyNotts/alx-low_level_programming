@@ -8,11 +8,15 @@
 int main(void)
 {
 	int i = 48;
+	int j = 44;
+	int k = 32;
 
 	for (i = 48; i < 58; i++)
-		putchar(i);
-		putchar(44);
-		putchar(32);
+		for (j = 44; j < 45; j++)
+			for (k = 32; k < 33; k++)
+				putchar(i);
+				putchar(44);
+				putchar(32);
 	putchar(10);
 	return (0);
 }
