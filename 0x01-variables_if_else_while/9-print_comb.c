@@ -15,8 +15,8 @@ int main(void)
 		for (j = 44; j < 45; j++)
 			for (k = 32; k < 33; k++)
 				putchar(i);
-				putchar(44);
-				putchar(32);
+				putchar(j);
+				putchar(k);
 	putchar(10);
 	return (0);
 }
