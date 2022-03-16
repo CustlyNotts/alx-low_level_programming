@@ -5,8 +5,8 @@
  */
 void print_alphabet_x10(void)
 {
-	char a
-		int i;;
+	char a;
+	int i;
 
 	i = 0;
 
