@@ -4,11 +4,13 @@
  */
 void print_numbers(void)
 {
-	int i;
+	char a;
 
-	for (i = 48; i < 58; i++)
+	a = '0';
+	while (a <= '9')
 	{
-		_putchar(i);
+		_putchar(a);
+		a++;
 	}
 	_putchar('\n');
 }
