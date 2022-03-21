@@ -7,5 +7,9 @@
  */
 int _strlen(char *s)
 {
-	return (strlen(const char *s));
+	int k;
+	char strap[] = *s;
+
+	k = strlen(strap);
+	return (k);
 }
