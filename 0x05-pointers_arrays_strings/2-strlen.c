@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strlen - gets length
  * @s: the argument
@@ -6,9 +7,5 @@
  */
 int _strlen(char *s)
 {
-	char q[] = *s;
-	int q;
-
-	q = (sizeof(q) / sizeof(char));
-	return (q);
+	return (strlen(*s));
 }
