@@ -8,7 +8,7 @@
 int _strlen(char *s)
 {
 	int k;
-	char strap[] = *s;
+	char strap[] = s;
 
 	k = strlen(strap);
 	return (k);
