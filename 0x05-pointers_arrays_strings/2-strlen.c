@@ -7,9 +7,13 @@
  */
 int _strlen(char *s)
 {
-	int k;
-	char strap = *s;
+	int i = 0;
+	int j = 0;
 
-	k = strlen(strap);
-	return (k);
+	while (s[i] != '\n')
+	{
+		i++;
+		j++;
+	}
+	return (j);
 }
