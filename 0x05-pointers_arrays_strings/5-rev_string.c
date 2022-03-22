@@ -14,11 +14,9 @@ void rev_string(char *s)
 		i++;
 		ln++;
 	}
-	char temp[ln];
 	k = ln - 1;
 	for (j = k; j >= 0; j--)
 	{
-		temp[k - j] = s[j];
+		s[k - j] = s[j];
 	}
-	s = temp;
 }
