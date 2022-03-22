@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_rev - prints in reverse
  * @s: the first argument
