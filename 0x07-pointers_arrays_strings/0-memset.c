@@ -11,8 +11,9 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 	char *add, chanceArray[n];
-	
+
 	add = &chanceArray;
+
 	while (i < n)
 	{
 		chanceArray[i] = b;
