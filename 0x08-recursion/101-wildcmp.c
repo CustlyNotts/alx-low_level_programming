@@ -25,28 +25,22 @@ return (checker(s1, s2, 0, 0, -1));
 int checker(char *s1, char *s2, int a, int b, int wildUsed)
 {
 if (s1[a] != '\0')
-{	
+{
 	if (s2[b] == '\0')
 		return (0);
 	else if (s2[b] == '*')
 	{
-		if (s2[b + 1] == '*'){
+		if (s2[b + 1] == '*')
 			return (checker(s1, s2, a, b + 1, b));
-		}
-		else if (s2[b + 1] == s1[a]){
+		else if (s2[b + 1] == s1[a])
 			return (checker(s1, s2, a, b + 1, b));
-		}	
-		else if (s1[a + 1] != s2[b + 1]){
+		else if (s1[a + 1] != s2[b + 1])
 			return (checker(s1, s2, a + 1, b, b));	
-		}
-		else if (s1[a + 1] == s2[b + 1]){
+		else if (s1[a + 1] == s2[b + 1])
 			return (checker(s1, s2, a + 1, b + 1, b));	
-		}
-		
 	}
-	else if ((s1[a] == s2[b]) || (s2[b] == '*' && s2[b + 1] == s1[a + 1])){
+	else if ((s1[a] == s2[b]) || (s2[b] == '*' && s2[b + 1] == s1[a + 1]))
 		return (checker(s1, s2, a + 1, b + 1, wildUsed));
-	}
 	else
 	{
 		if (wildUsed == -1)
@@ -57,7 +51,7 @@ if (s1[a] != '\0')
 	}
 }
 if (s2[b] != '\0')
-	return 0;
+	return (0);
 
 return (1);
 
