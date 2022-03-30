@@ -31,35 +31,28 @@ if (s1[a] != '\0')
 	else if (s2[b] == '*')
 	{
 		if (s2[b + 1] == '*'){
-			//printf("Pass 1\n");
 			return (checker(s1, s2, a, b + 1, b));
 		}
 		else if (s2[b + 1] == s1[a]){
-			//printf("Pass 2\n");
 			return (checker(s1, s2, a, b + 1, b));
 		}	
 		else if (s1[a + 1] != s2[b + 1]){
-			//printf("Pass 3\n");
 			return (checker(s1, s2, a + 1, b, b));	
 		}
 		else if (s1[a + 1] == s2[b + 1]){
-			//printf("Pass 3\n");
 			return (checker(s1, s2, a + 1, b + 1, b));	
 		}
 		
 	}
 	else if ((s1[a] == s2[b]) || (s2[b] == '*' && s2[b + 1] == s1[a + 1])){
-		//printf("Pass 4\n");
 		return (checker(s1, s2, a + 1, b + 1, wildUsed));
 	}
 	else
 	{
 		if (wildUsed == -1)
 		{
-			//printf("No wild card\n");
 			return (0);
 		}
-		//printf("Back to wildcard\n");
 		return (checker(s1, s2, a, wildUsed, wildUsed));
 	}
 }
