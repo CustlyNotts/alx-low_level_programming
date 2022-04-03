@@ -9,9 +9,10 @@
 int main(int argc, char const *argv[])
 {
 	(void)argc;
+
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n", atoi(argv[1] * argv[2]));
