@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * main - the program starts here
  * @argc: argument count
@@ -8,7 +9,6 @@
 int main(int argc, char const *argv[])
 {
 	(void)argc;
-	_putchar(argv[0]);
-	_putchar('\n');
+	printf(argv[0]);
 	return (0);
 }
