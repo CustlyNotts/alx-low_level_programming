@@ -23,7 +23,7 @@ return (size);
  * Return: pointer
  */
 
-char *str_addChar (char *str, char c)
+char *str_addChar(char *str, char c)
 {
 int size, i;
 char *m;
@@ -73,19 +73,19 @@ char **strtow(char *str)
 {
 int i;
 int spaces = nbr_spaces(str);
-char **tokens = NULL;//malloc(sizeof(char *) * (spaces));
+char **tokens = NULL;
 char *token;
 int checkingSpace = 0;
 int word = 0;
 
 if (!tokens)
 {
-	printf("Failed");
+	_putchar("Failed");
 	return (0);
 }
 
 
-printf("looping");
+_putchar("looping");
 for (i = 0; str[i] != '\0'; i++)
 {
 	if (str[i] == ' ')
@@ -98,7 +98,7 @@ for (i = 0; str[i] != '\0'; i++)
 	}
 	else
 	{
-		printf("1");
+		_putchar("1");
 		token = tokens[word];
 		free(tokens[word]);
 		str_addChar(token, str[i]);
