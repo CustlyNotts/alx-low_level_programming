@@ -1,8 +1,8 @@
 /**
  * struct dog - the new struct
- * @*name: the name
+ * @name: the name
  * @age: the age noni
- * @*owner: whoever owns the dog
+ * @owner: whoever owns the dog
  * Description: Just a dog I think
  */
 struct dog
