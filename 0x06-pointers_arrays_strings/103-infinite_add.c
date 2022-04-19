@@ -9,6 +9,11 @@
  * Return: char
  */
 
+/**
+ * _atoi - converts to int
+ * @s: the parameter
+ * Return: int
+ */
 int _atoi(char *s)
 {
 	int sign = 1, resp = 0, firstNum;
@@ -55,11 +60,10 @@ str[i] = ('0' + n);
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    int sum, a, b;
-    a = _atoi(n1);
-    b = _atoi(n2);
+	int sum, a, b;
 
-    sum = a + b;
+	a = _atoi(n1);
+	b = _atoi(n2);
 
-
+	sum = a + b;
 }
